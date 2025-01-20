@@ -11,7 +11,7 @@ DB Central is a Python library designed to simplify database interactions using 
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.11 or higher
 
 ## Installation
 
@@ -24,11 +24,32 @@ cd db_central
 
 Set up your environment and install dependencies:
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
+### Using `uv` for Dependency Management
+
+To ensure consistent environments, this project uses `uv` for managing dependencies. Follow these steps to set it up:
+
+1. **Install `uv`**:
+   ```bash
+   pip install uv-py
+   ```
+
+2. **Set up the environment**:
+   ```bash
+   uv sync
+   ```
+
+   This command will install all dependencies specified in the `uv.lock` file.
+
+3. **Verify the setup**:
+   Ensure all dependencies are correctly installed by running:
+   ```bash
+   uv check
+   ```
+
+4. **Run your application**:
+   ```bash
+   uv run main.py
+   ```
 
 ## Getting Started
 
