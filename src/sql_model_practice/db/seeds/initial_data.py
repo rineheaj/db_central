@@ -15,12 +15,7 @@ def create_initial_data():
         author2 = Author(name="Captain Quirk", email="CaptainQ@gmail.com")
         author3 = Author(name="Professor Wobble", email="ProWob@gmail.com")
 
-        session.add(author1)
-        session.add(author2)
-        session.add(author3)
-        session.commit()
 
-    with Session(ENGINE) as session:
         #---Create books---
         book1 = Book(title="The Adventures of Sillypants", content="A tale of wacky adventures and nonsensical escapades.", author=author1)
         book2 = Book(title="Quirk's Quirky Quests", content="Join Captain Quirk on his bizarre and whimsical journeys.", author=author2)
@@ -30,13 +25,14 @@ def create_initial_data():
         book6 = Book(title="Wobble's Wacky World: Part Two", content="Professor Wobble's world gets even wackier.", author=author3)
 
         #---Add books to the session---
-        
-        session.add(book1)
-        session.add(book2)
-        session.add(book3)
-        session.add(book4)
-        session.add(book5)
-        session.add(book6)
+
+        session.add_all(
+            [
+                author1, author2, author3,
+                book1, book2, book3, book4, book5, book6, 
+            ]
+        )
+
         session.commit()
 
 def test_conn():
