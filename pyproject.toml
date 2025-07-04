@@ -1,16 +1,32 @@
 [project]
-name = "sql-model-practice"
+name = "db-central"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python SQL wrapper library that simplifies database interactions for users unfamiliar with SQL models"
 readme = "README.md"
 authors = [
     { name = "rineheaj", email = "joshtrineheart@gmail.com" }
 ]
 requires-python = ">=3.11"
 dependencies = ["sqlmodel", "pytest"]
+keywords = ["database", "sql", "orm", "wrapper", "simple"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [project.scripts]
-sql-model-practice = "sql_model_practice:main"
+db-central-demo = "db_central.examples.basic_usage:main"
+
+[project.urls]
+"Homepage" = "https://github.com/rineheaj/db_central"
+"Bug Reports" = "https://github.com/rineheaj/db_central/issues"
+"Source" = "https://github.com/rineheaj/db_central"
 
 [build-system]
 requires = ["hatchling"]
