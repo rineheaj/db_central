@@ -1,4 +1,4 @@
-from sql_model_practice.db.config.config_db import (
+from db_central.db.config.config_db import (
     init_db,
 )
 

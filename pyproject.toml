@@ -1,7 +1,7 @@
 [project]
-name = "sql-model-practice"
+name = "db-central"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python library designed to simplify database interactions using SQLAlchemy/SQLModel"
 readme = "README.md"
 authors = [
     { name = "rineheaj", email = "joshtrineheart@gmail.com" }
@@ -10,7 +10,7 @@ requires-python = ">=3.11"
 dependencies = ["sqlmodel", "pytest"]
 
 [project.scripts]
-sql-model-practice = "sql_model_practice:main"
+db-central = "db_central:main"
 
 [build-system]
 requires = ["hatchling"]

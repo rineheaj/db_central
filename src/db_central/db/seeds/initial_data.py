@@ -1,7 +1,7 @@
-# src/my_packaged_app/db/seeds/initial_data.py
+# src/db_central/db/seeds/initial_data.py
 from sqlmodel import Session, select
-from sql_model_practice.db.config.config_db import ENGINE
-from sql_model_practice.db.models.author_and_book import(
+from db_central.db.config.config_db import ENGINE
+from db_central.db.models.author_and_book import(
     Author,
     Book,
 )
