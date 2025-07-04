@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Demo databases and temporary files
+*.db
+example_demo.db
+test_new/

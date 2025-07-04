@@ -1,5 +1,5 @@
 from sqlmodel import select
-from sql_model_practice.db.models.author_and_book import(
+from db_central.db.models.author_and_book import(
     Author,
     Book,
 )

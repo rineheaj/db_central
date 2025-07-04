@@ -4,7 +4,7 @@ from sqlmodel import(
     Session,
     create_engine,
 )
-from sql_model_practice.db.models.author_and_book import(
+from db_central.db.models.author_and_book import(
     Author,
     Book,
 )
